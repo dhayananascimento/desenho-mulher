@@ -1,7 +1,7 @@
 # Desenho - Mulher 
 Projeto com a finalidade de treinar habilidades relativa a linguagem CSS.
 
-## Layout
+## Demo
 <img src="./mulher.png" alt= "imagem mulher">     
         
 ## Linguagens
