@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: #f1f1fc;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cabeca {
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0;
+    position: relative;
+    border-radius: 45%;
+    background-color: #966141;
+}
+
+.cabeca::before,
+.cabeca::after {
+    content: "";
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #000;
+    
+    position: absolute;
+    left: 0;
+}
+
+.cabeca::before {
+    z-index: -1;
+    box-shadow: 
+        35px -35px 0 #000,
+        -50px 40px 0 #000,
+        -50px 100px 0 #000,
+        -30px 150px 0 #000,
+        95px -35px 0 #000,
+        180px 40px 0 #000,
+        180px 100px 0 #000,
+        160px 150px 0 #000,
+        130px 0 0 #000,
+        -60px 0 0 #000,
+        -30px -35px 0 #000,
+        -5px -40px 0 #000,
+        -70px 60px 0 #000,
+        -70px 120px 0 #000,
+        190px 0 0 #000,
+        160px -35px 0 #000,
+        135px -40px 0 #000,
+        200px 60px 0 #000,
+        200px 120px 0 #000;
+}
+
+.cabeca::after {
+    box-shadow: 
+        130px 0 0 #000,
+        40px -20px 0 #000,
+        90px -20px 0 #000,
+        -35px 35px 0 #000,
+        165px 35px 0 #000;
+}
+
+.orelha-esquerda, 
+.orelha-direita {
+    width: 30px;
+    height: 50px;
+    background-color: #966141;
+
+    position: absolute;
+    top: 105px;
+}
+
+.orelha-esquerda {
+    left: -20px;
+    border-radius: 40% 5% 20% 60%;
+}
+
+.orelha-direita {
+    left: 190px;
+    border-radius:  5% 40% 60% 20%;
+}
+
+.orelha-esquerda::before, 
+.orelha-direita::before {
+    content: "";
+    width: 15px;
+    height: 25px;
+    background-color: #6a472f;
+
+    position: absolute;
+    top: 10px;
+}
+
+.orelha-esquerda::before {
+    right: 5px;
+    border-radius: 40% 5% 20% 60%;
+}
+
+.orelha-direita::before {
+    left: 5px;
+    border-radius:  5% 40% 60% 20%;
+}
+
+.orelha-esquerda::after, 
+.orelha-direita::after {
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #fff;
+
+    position: absolute;
+    bottom: 3px;
+}
+
+.orelha-esquerda::after {
+    right: 6px;
+}
+
+.orelha-direita::after {
+    left: 6px;
+}
+
+.olhos {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 75px 0 0 #fff;
+
+    position: absolute;
+    top: 100px;
+    left: 55px;
+}
+
+.olhos::before {
+    content:"";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #000;
+    box-shadow: 75px 0 0 #000;
+
+    position: absolute;
+    bottom: 0;
+    left: 2.5px;
+}
+
+.olhos::after {
+    content:"";
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 75px 0 0 #fff;
+
+    position: absolute;
+    right: 3.5px;
+    bottom: 3.5px;
+}
+
+.oculos-esquerdo,
+.oculos-direito {
+    width: 50px;
+    height: 30px;
+    background-color: transparent;
+    border: 2px solid #000;
+    
+    position: absolute;
+    top: 92.5px;
+}
+
+.oculos-esquerdo {
+    border-radius: 10% 15% 45% 45%;
+    left: 37.5px;
+}
+
+.oculos-direito {
+    border-radius: 15% 10% 45% 45%;
+    right: 37.5px;
+}
+
+.oculos-esquerdo::before, 
+.oculos-direito::before {
+    content: "";
+    width: 10px;
+    height: 2px;
+    background-color: #000;
+
+    position: absolute;
+    top: 2px;
+}
+
+.oculos-esquerdo::before {
+    right: -11px;
+
+}
+.oculos-direito::before {
+    left: -11px;
+}
+
+.oculos-esquerdo::after, 
+.oculos-direito::after {
+    content: "";
+    width: 45px;
+    height: 2px;
+    background-color: #000;
+
+    position: absolute;
+    top: 4px;
+}
+
+.oculos-esquerdo::after {
+    left: -45px;
+    transform: rotate(-12deg);
+}
+
+.oculos-direito::after {
+    right: -45px;
+    transform: rotate(12deg);
+}
+
+.boca {
+    width: 50px;
+    height: 60px;
+    border-radius: 50%;
+    border-bottom:  3px solid #6a472f;
+    background-color: transparent;
+    
+    position: absolute;
+    bottom: 10px;
+    left: 75px;
+}
+
+.boca::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 40%;
+    background-color: transparent;
+    border-top: 2px solid #6a472f;
+
+    position: absolute;
+    left: 15px;
+}
